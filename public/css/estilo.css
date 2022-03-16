@@ -1,0 +1,55 @@
+/*font-family: 'Recursive', sans-serif;
+font-family: 'Righteous', cursive; */
+
+.root {
+    background-color: #FB6B6B;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px
+}
+
+.header-entrada > img {
+    height: 100px;
+}
+
+.titulo-entrada {
+    margin-top: 10px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.caixa_iniciar {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.caixa_iniciar-recall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 35px;
+    background: #FFFFFF;
+    border: 2px solid #D70900;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.iniciar-texto {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #D70900;
+}
