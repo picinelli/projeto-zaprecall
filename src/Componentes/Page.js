@@ -1,20 +1,32 @@
+import TelaInicial from "./TelaInicial"
+import Header from "./Header"
+
 export default function Page() {
     return (
         <>
-        <header>
-    
-        </header>
-        <aside>
-            <div class="header-entrada">
-                <img src="./assets/raio.svg"></img>
-                <h1 class="titulo-entrada">ZapRecall</h1>
+        <TelaInicial />
+        <Header />
+        <main>
+            <div class="caixa-opcao">
+                <p>Pergunta 1</p>
+                <ion-icon name="play-outline"></ion-icon>
             </div>
-            <div class="caixa_iniciar">
-                <div class="caixa_iniciar-recall">
-                    <p class="iniciar-texto">Iniciar Recall!</p>
-                </div>
+            <div class="caixa-opcao">
+                <p>Pergunta 1</p>
+                <ion-icon name="play-outline"></ion-icon>
             </div>
-        </aside>
+            <div class="caixa-opcao">
+                <p>Pergunta 1</p>
+                <ion-icon name="play-outline"></ion-icon>
+            </div>
+            <div class="caixa-opcao">
+                <p>Pergunta 1</p>
+                <ion-icon name="play-outline"></ion-icon>
+            </div>
+        </main>
+        <footer>
+            <p>0/4 CONCLUÍDOS</p>
+        </footer>
         </>
     )
 }
