@@ -1,13 +1,13 @@
 export default function TelaInicial() {
     return (
-        <aside class="tela-inicial escondido">
-            <div class="header-entrada">
+        <aside className="tela-inicial escondido">
+            <div className="header-entrada">
                 <img src="./assets/raio.svg" alt="raio"></img>
-                <h1 class="titulo-entrada">ZapRecall</h1>
+                <h1 className="titulo-entrada">ZapRecall</h1>
             </div>
-            <div class="caixa_iniciar">
-                <div class="caixa_iniciar-recall" onClick={liberarSite}>
-                    <p class="iniciar-texto">Iniciar Recall!</p>
+            <div className="caixa_iniciar">
+                <div className="caixa_iniciar-recall" onClick={liberarSite}>
+                    <p className="iniciar-texto">Iniciar Recall!</p>
                 </div>
             </div>
         </aside>  
