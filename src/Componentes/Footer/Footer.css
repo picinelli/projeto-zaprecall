@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+footer > p {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #333333;
+}
+
+.icones-respondidos ion-icon {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.resposta-certa {
+    color: #2FBE34;
+}

@@ -1,35 +1,30 @@
+import "../CSS Global/reset.css"
+import "../CSS Global/estilo.css"
+
 import {useState} from 'react';
-import Header from "./Header"
-import Main from "./Main"
-import Footer from "./Footer"
+import Header from "./Header/Header"
+import Main from "./Main/Main"
+import Footer from "./Footer/Footer"
+import TelaInicial from "./TelaInicial/TelaInicial"
 
 export default function Page() {
-    const [Liberacao, setLiberacao] = useState("bloqueado")
+    const [Liberacao, setLiberacao] = useState("bloqueado");
+    const [respondidosTotal, setRespondidosTotal] = useState(0)
 
-    function liberarSite(mensagem) {
-        setLiberacao(mensagem)
+    function alterarTotal(valor) {
+        setRespondidosTotal(respondidosTotal + valor)
     }
 
     if(Liberacao === "bloqueado") {
         return (
-            <aside className="tela-inicial">
-                <div className="header-entrada">
-                    <img src="./assets/raio.svg" alt="raio"></img>
-                    <h1 className="titulo-entrada">ZapRecall</h1>
-                </div>
-                <div className="caixa_iniciar">
-                    <div className="caixa_iniciar-recall" onClick={() => liberarSite("liberado")}>
-                        <p className="iniciar-texto">Iniciar Recall!</p>
-                    </div>
-                </div>
-            </aside>  
+            <TelaInicial liberarSite={setLiberacao} />
         )
     } else if (Liberacao === "liberado") {
         return (
             <>
             <Header />
-            <Main />
-            <Footer />
+            <Main callback={(valor) => alterarTotal(valor)} />
+            <Footer respondidosTotal={respondidosTotal} />
             </>
         )
     }
