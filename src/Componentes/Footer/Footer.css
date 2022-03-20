@@ -25,6 +25,14 @@ footer > p {
     font-size: 26px;
 }
 
-.resposta-certa {
+.resposta-verde {
     color: #2FBE34;
+}
+
+.resposta-laranja {
+    color: #FF922E;
+}
+
+.resposta-vermelha {
+    color: #FF3030;
 }

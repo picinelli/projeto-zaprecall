@@ -8,7 +8,7 @@ export default function Pergunta(props) {
     const [VirarFrente, setVirarFrente] = useState("front-face face");
     const [VirarTras, setVirarTras] = useState("back-face face");
     const [Icone, setIcone] = useState("play-outline");
-    const {callback} = props
+    const {alterarArrayRespostas} = props
 
     function manterCartasViradas() {
         setVirarFrente("front-face face virar-frente-fixo")
@@ -21,24 +21,24 @@ export default function Pergunta(props) {
     }
 
     function responderNao() {
+        alterarArrayRespostas("close-circle")
         setRevelarCard("card escondido")
         setCaixaOpcao("caixa-opcao pergunta_respondida-nao")
         setIcone("close-circle")
-        callback(1)
     }
 
     function responderQuase() {
+        alterarArrayRespostas("help-circle")
         setRevelarCard("card escondido")
         setCaixaOpcao("caixa-opcao pergunta_respondida-quase")
         setIcone("help-circle")
-        callback(1)
     }
 
     function responderZap() {
+        alterarArrayRespostas("checkmark-circle")
         setRevelarCard("card escondido")
         setCaixaOpcao("caixa-opcao pergunta_respondida-zap")
         setIcone("checkmark-circle")
-        callback(1)
     }
 
     return (

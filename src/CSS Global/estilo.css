@@ -4,9 +4,14 @@ font-family: 'Righteous', cursive; */
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FB6B6B;
+}
+
 .root {
     background-color: #FB6B6B;
     width: 100vw;
     height: 100vh;
+    overflow-y: auto;
 }
 

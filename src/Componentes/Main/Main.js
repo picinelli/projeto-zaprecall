@@ -1,8 +1,9 @@
 import Pergunta from '../Pergunta/Pergunta'
+import "./Main.css"
 
 export default function Main(props) {
 
-    const {callback} = props
+    const {callback, alterarArrayRespostas} = props
 
     const perguntas = [
         {
@@ -58,6 +59,7 @@ export default function Main(props) {
                     resposta={pergunta.resposta}
                     key={pergunta.perguntaNum}
                     callback={callback}
+                    alterarArrayRespostas={alterarArrayRespostas}
                     />)
             }
         </main>
