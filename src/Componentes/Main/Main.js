@@ -47,8 +47,6 @@ export default function Main(props) {
             resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"
         },
     ]
-    /*perguntas.sort(comparador)
-    console.log(perguntas)*/
     
     return (
         <main>
@@ -64,8 +62,4 @@ export default function Main(props) {
             }
         </main>
     )
-
-    /*function comparador() { 
-        return Math.random() - 0.5; 
-    }*/
 }

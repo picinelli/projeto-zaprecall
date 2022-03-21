@@ -28,6 +28,7 @@
 .caixa-opcao > ion-icon {
     margin-right: 15px;
     font-size: 30px;
+    cursor: pointer;
 }
 
 /* ///////////////////////////////////////////////////////////////////////// */
@@ -69,6 +70,7 @@
     right: 10px;
     bottom: 10px;
     height: 17px;
+    cursor: pointer;
 }
 
 .back-face {
@@ -165,5 +167,22 @@
     .caixa-opcao {
         width: 500px;
         height: 70px;
+    }
+
+    .card {
+        width: 500px;
+        height: 150px;
+    }
+
+    .resposta-nao {
+        width: 150px;
+    }
+    
+    .resposta-quase {
+        width: 150px;
+    }
+    
+    .resposta-zap {
+        width: 150px;
     }
 }

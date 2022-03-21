@@ -21,6 +21,7 @@ export default function Pergunta(props) {
     }
 
     function responderNao() {
+        console.log()
         alterarArrayRespostas("close-circle")
         setRevelarCard("card escondido")
         setCaixaOpcao("caixa-opcao pergunta_respondida-nao")
@@ -43,14 +44,14 @@ export default function Pergunta(props) {
 
     return (
         <div className="pergunta">
-            <div className={CaixaOpcao} onClick={() => revelarPergunta()}>
+            <div className={CaixaOpcao}>
                 <p>{props.perguntaNum}</p>
-                <ion-icon name={Icone}></ion-icon>
+                <ion-icon name={Icone} onClick={() => revelarPergunta()}></ion-icon>
             </div>
-            <div className={RevelarCard} onClick={() => {manterCartasViradas()}} data-identifier="card">
+            <div className={RevelarCard}>
                 <div className={VirarFrente}>
                     <p>{props.perguntaTexto}</p>
-                    <img src={Virar} alt="virar"></img>
+                    <img src={Virar} alt="virar" onClick={() => {manterCartasViradas()}}></img>
                 </div>
                 <div className={VirarTras}>
                     <p>{props.resposta}</p>

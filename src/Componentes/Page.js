@@ -15,13 +15,8 @@ export default function Page() {
     const [arrayRespostas, setArrayRespostas] = useState([])
 
     function alterarArrayRespostas(resposta) {
-        if (arrayRespostas === []) {
-            setArrayRespostas([resposta])
-            alterarTotal(1)
-        } else {
-            setArrayRespostas([...arrayRespostas, resposta])
-            alterarTotal(1)
-        }
+        setArrayRespostas([...arrayRespostas, resposta])
+        alterarTotal(1)
         console.log(arrayRespostas)
     }
 

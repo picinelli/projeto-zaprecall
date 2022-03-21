@@ -16,7 +16,7 @@ export default function Footer(props) {
                 <p>{totalTexto}</p>
                 <p className="descricao">{descricao}</p>
                 <div className="icones-respondidos">
-                    {icones.map(icone => checarIcone(icone))}
+                    {icones.map((icone, index) => checarIcone(icone, index))}
                 </div>
                 <div className="botao-reiniciar" onClick={reiniciarTudo}>
                     <p>REINICIAR RECALL</p>
