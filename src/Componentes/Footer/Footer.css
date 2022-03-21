@@ -4,7 +4,8 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    max-height: 200px;
+    height: 80px;
     background: #FFFFFF;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
     position: fixed;
@@ -18,10 +19,28 @@ footer > p {
     font-weight: 400;
     font-size: 22px;
     color: #333333;
+    margin-top: 30px;
+}
+
+.footer-resultado {
+    height: 220px;
+}
+
+.descricao {
+    margin-top: 15px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    color: #333333;
+    height: 50px;
+    width: 210px;
 }
 
 .icones-respondidos ion-icon {
-    margin-top: 10px;
+    padding-bottom: 25px;
     font-size: 26px;
 }
 
@@ -35,4 +54,24 @@ footer > p {
 
 .resposta-vermelha {
     color: #FF3030;
+}
+
+.botao-reiniciar {
+    width: 167px;
+    height: 52px;
+    background: #FB6B6B;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.botao-reiniciar > p {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
 }

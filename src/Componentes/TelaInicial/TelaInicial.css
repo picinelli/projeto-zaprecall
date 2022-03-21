@@ -7,7 +7,7 @@
 }
 
 .header-entrada > img {
-    height: 100px;
+    height: 130px;
 }
 
 .titulo-entrada {
@@ -21,8 +21,28 @@
 
 .caixa_iniciar {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 120px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.meta-zaps {
+    width: 204px;
+    height: 35px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 0px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ADADAD;
 }
 
 .caixa_iniciar-recall {
@@ -43,4 +63,30 @@
     font-weight: 400;
     font-size: 17px;
     color: #D70900;
+}
+
+@media (min-width: 900px) {
+    ::placeholder {
+        text-align: center;
+    }
+
+    .header-entrada > img {
+        height: 160px;
+    }
+    
+    .titulo-entrada {
+        font-size: 42px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+
+    .meta-zaps {
+        width: 300px;
+        height: 40px;
+    }
+
+    .caixa_iniciar-recall {
+        width: 300px;
+        height: 40px;
+    }
 }

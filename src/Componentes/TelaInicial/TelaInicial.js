@@ -11,6 +11,7 @@ export default function TelaInicial(props) {
                 <h1 className="titulo-entrada">ZapRecall</h1>
             </div>
             <div className="caixa_iniciar">
+                <input className="meta-zaps" type="text" placeholder="Digite sua meta de zaps..."></input>
                 <div className="caixa_iniciar-recall" onClick={() => props.liberarSite("liberado")}>
                     <p className="iniciar-texto">Iniciar Recall!</p>
                 </div>

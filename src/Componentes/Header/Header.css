@@ -19,3 +19,13 @@
     font-size: 35px;
     color: #FFFFFF;
 }
+
+@media (min-width: 900px) {
+    .header-principal > img {
+        height: 95px;
+    }
+
+    .titulo-principal {
+        font-size: 40px;
+    }
+}

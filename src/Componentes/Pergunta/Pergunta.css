@@ -160,3 +160,10 @@
 .escondido {
     display: none;
 }
+
+@media (min-width: 900px) {
+    .caixa-opcao {
+        width: 500px;
+        height: 70px;
+    }
+}

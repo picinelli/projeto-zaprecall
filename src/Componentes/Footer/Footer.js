@@ -1,7 +1,7 @@
 import "./Footer.css";
 
 export default function Footer(props) {
-    const {respondidosTotal, icones, totalTexto} = props
+    const {icones, totalTexto, descricao, reiniciarTudo} = props;
 
 
     function checarIcone(icone) {
@@ -10,9 +10,25 @@ export default function Footer(props) {
         if(icone === "close-circle") return <ion-icon class="resposta-vermelha" name={icone}></ion-icon>
     }
 
+    if (icones.length === 8) {
+        return (
+            <footer className="footer-resultado">
+                <p>{totalTexto}</p>
+                <p className="descricao">{descricao}</p>
+                <div className="icones-respondidos">
+                    {icones.map(icone => checarIcone(icone))}
+                </div>
+                <div className="botao-reiniciar" onClick={reiniciarTudo}>
+                    <p>REINICIAR RECALL</p>
+                </div>
+            </footer>
+        )
+    }
+
     return (
         <footer>
             <p>{totalTexto}</p>
+            <p className="descricao">{descricao}</p>
             <div className="icones-respondidos">
                 {icones.map(icone => checarIcone(icone))}
             </div>
