@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/picinelli/projeto-zaprecall/">
-    <img src="https://github.com/picinelli/projeto-zaprecall/tree/main/src/assets/raio.png" alt="Logo" width="100">
+    <img src="https://github.com/picinelli/projeto-zaprecall/blob/main/src/assets/raio.svg" alt="Logo" width="100">
   </a>
 
 <h3 align="center">Zap! Recall Project</h3>
