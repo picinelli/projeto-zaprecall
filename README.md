@@ -22,9 +22,6 @@
     - [x]  Seu projeto deverá ser desenvolvido utilizando Git e GitHub.
     - [x]  **A cada requisito implementado** faça um *commit* com uma mensagem descritiva do que você evoluiu. Caso queira dividir um requisito em vários *commits*, não há problema. Mas evite colocar mais de um requisito no mesmo *commit*.
 - Layout
-    
-    [ZapRecall](https://www.figma.com/file/pjJ1oBmEIW1qHICjeGoiNc/ZapRecall-(Proposta-T5---ampliado)?node-id=0%3A1)
-    
     - [x]  Aplicar layout para seguindo o Figma.
     - [x]  Use as fontes indicadas no Layout do Figma
 - Componentização e dados
