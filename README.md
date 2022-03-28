@@ -15,36 +15,51 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## Requirements
+## Requisitos
 
-- General
-  - [x] Vanilla React 
-  - [x] Github public Repository and page deploy
-  - [x] Commit every requirement
+- Geral
+    - [x]  Manipule o HTML usando somente React (**sem usar o document, nem o localStorage,** nem bibliotecas React, JavaScript e/ou CSS). **Todo o armazenamento de informações deve ser feito via estados.**
+    - [x]  Seu projeto deverá ser desenvolvido utilizando Git e GitHub.
+    - [x]  **A cada requisito implementado** faça um *commit* com uma mensagem descritiva do que você evoluiu. Caso queira dividir um requisito em vários *commits*, não há problema. Mas evite colocar mais de um requisito no mesmo *commit*.
 - Layout
-  - [x] Mobile layout structured using given template
-- Data Componentization
-  - [x] Page elements must be componentized with React in separate files
-  - [x] Dynamic data (decks, cards, etc.) must be JS arrays or objects, and must be rendered on screen 
-- Start up
-  - [x] A home screen must be displayed on start up
-  - [x] Upon clicking the "Iniciar Recall!", the deck of cards must be displayed on screen
-- Flashcards
-  - [ ] Cards must be shuffled on each playthrough
-  - [x] All flashcards must show up face-down and indexed, "hiding" the given question within
-  - [x] Upon clicking on a card, the matching question must be displayed (Bonus: card-flip animation)
-  - [x] Upon clicking the "turn card" icon, the answer must be shown  
-    - [x] There should be three buttons beneath the answer: "não lembrei" (did not remember), "quase não lembrei" (almost could not remember), and "Zap!". Each must be given an assigned color: red, orange and green (respectively). 
-    - [x] Right after an option is chosen, card should turn once again and return to default, with its initial display question having a corresponding line-through color and icon for status
-- Bonus (optional)
-  - Restart
-    - [x] After a round, a "Restart Recall" button should allow the user to re-play through the game without a page reload
-  - Goal of "Zaps!"
-    - [ ] A input on the home screen should allow the user to determine the minimum number of "Zaps!" to be met (minimum of one). This should determine which results message the user will get 
-  - Multiple Decks
-    - [ ] The user should be able to choose which deck to play within a given list of different decks
+    
+    [ZapRecall](https://www.figma.com/file/pjJ1oBmEIW1qHICjeGoiNc/ZapRecall-(Proposta-T5---ampliado)?node-id=0%3A1)
+    
+    - [x]  Aplicar layout para seguindo o Figma.
+    - [x]  Use as fontes indicadas no Layout do Figma
+- Componentização e dados
+    - [x]  Os elementos da página devem ser componentizados com React em arquivos separados.
+    - [x]  Os dados dinâmicos da página (como o *deck*, *flashcards*, etc) devem ser representados como *arrays* ou objetos no JavaScript e renderizados na tela.
+- Início
+    - [x]  Ao iniciar, uma “tela de início” deverá ser exibida.
+    - [x]  Ao clicar no botão “Iniciar Recall!”, o *deck* de *flashcards* é exibido na tela.
+- *Flashcards*
+    - [ ]  Toda vez o que o usuário for jogar, os *flashcards* devem ser embaralhados.
+    - [x]  Todos os *flashcards* devem aparecer na tela virados e indexados por números (ex: Flashcard 1, Flashcard 2), de modo a “esconder” o termo ou pergunta que ele contém.
+    - [x]  Ao clicar em um *flashcard*, a pergunta ou termo correspondente ao *flashcard* deve aparecer (não é necessária nenhuma animação).
+    - [x]  Para ver a resposta do *flashcard*, o usuário deve clicar no ícone de “virar” (o componente é o mesmo, apenas teve seu *layout* adaptado).
+        - Ao virar um *flashcard*...
+            - [x]  Ao clicar em qualquer um dos botões (Não lembrei, Quase não lembrei ou Zap), o *flashcard* deverá ser dado como respondido e terá seu status alterado para refletir a escolha do usuário:
+                - *Flashcard* incorreto (Não lembrei)
+                - *Flashcard* correto com esforço (Quase esqueci)
+                - *Flashcard* correto imediatamente (Zap!)
+            - [x]  Depois de respondida, a pergunta deverá ficar fechada e seu texto tachado com a cor correta correspondente ao seu status e um ícone.
+- Resultado final
+    - [x]  O resultado deve estar fixado na parte debaixo da página.
+    - [x]  Sempre que uma carta for virada...
+        - [x]  O número de flashcards respondidos deve ser atualizado
+        - [x]  A sequência de respostas deve ser registrada e aparecer no formato de ícones (importante: os ícones devem aparecer de acordo com a ordem de respostas do usuário e não da ordem dos flashcards!).
+    - [x]  Quando todos os flashcards forem respondidos...
+        - [x]  A mensagem de parabéns deve ser exibida se somente as respostas dos *flashcards* forem “ZAP!” ou “Lembrei com esforço”.
+            - [x]  Ao responder todos os *flashcards* e houver pelo menos um *status* "Incorreto", a mensagem de “Putz” deverá ser exibida.
 
-### Built With
+# Bônus (opcional)
+
+- Reiniciar
+    - [x]  Ao final de uma rodada, insira um botão de reiniciar que volta para a tela inicial e zera todas as respostas anteriores. Faça isso usando estados (coisas como `window.location` são proibidas para esse bônus).
+
+
+### Tecnologias Utilizadas
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
@@ -54,7 +69,7 @@
 
 <!-- CONTACT -->
 
-### Contact
+### Contato
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Mail][mail-shield]][mail-url]
