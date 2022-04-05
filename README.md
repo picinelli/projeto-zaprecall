@@ -50,7 +50,7 @@
         - [x]  A mensagem de parabéns deve ser exibida se somente as respostas dos *flashcards* forem “ZAP!” ou “Lembrei com esforço”.
             - [x]  Ao responder todos os *flashcards* e houver pelo menos um *status* "Incorreto", a mensagem de “Putz” deverá ser exibida.
 
-# Bônus (opcional)
+## Bônus (opcional)
 
 - Reiniciar
     - [x]  Ao final de uma rodada, insira um botão de reiniciar que volta para a tela inicial e zera todas as respostas anteriores. Faça isso usando estados (coisas como `window.location` são proibidas para esse bônus).
