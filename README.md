@@ -15,6 +15,8 @@
 
 <!-- ABOUT THE PROJECT -->
 
+![Banner](https://github.com/picinelli/projeto-zaprecall/blob/main/src/assets/ZapRecall-banner.png)
+
 ## Requisitos
 
 - Geral
