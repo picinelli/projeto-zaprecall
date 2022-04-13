@@ -28,6 +28,8 @@
 .caixa-opcao > ion-icon {
     margin-right: 15px;
     font-size: 30px;
+    width:30px;
+    height: 30px;
     cursor: pointer;
 }
 
