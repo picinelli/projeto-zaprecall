@@ -8,9 +8,9 @@
 
 <h3 align="center">Zap! Recall Project</h3>
   <p align="center">
-    Web Development Project using React
+    Projeto de uma aplicação de FlashCards utilizando React
     <br />
-    <a href="https://github.com/picinelli/projeto-zaprecall/tree/main/src"><strong>JSX code»</strong></a>
+    <a href="https://github.com/picinelli/projeto-zaprecall/tree/main/src"><strong>Código JSX»</strong></a>
 </div>
 
 <!-- ABOUT THE PROJECT -->
